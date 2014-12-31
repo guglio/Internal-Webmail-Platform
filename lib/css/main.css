@@ -1,0 +1,78 @@
+/* @import url("dettaglio_email.css"); */
+.list-wrapper {
+    margin-top : 45px;
+}
+.messaggio_email{
+	max-height: 3em;
+	overflow: hidden;
+}
+.list-wrapper form {
+    position :fixed;
+    top      : 55px;
+    left     : 15px;
+    width    : 100%;
+    z-index  : 10;
+}
+/*
+.page_wrapper{
+	width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.popup_panel{
+	width: 1024px;
+}
+*/
+.date_right{
+	float: right;
+	padding-right: 1em;
+	display: block;
+}
+.popup-from,
+.popup-to,
+.popup-subject{
+	padding-left: 1em;
+}
+#message{
+	min-height: 15em;
+}
+.popup_panel,.popup_panel_sent{
+	min-width: 640px;
+}
+.ui-icon-protocollo-trash {
+	background-image: url("../icon/trash.png") !important;
+}
+.ui-icon-protocollo-logout {
+	background-image: url("../icon/exit.png") !important;
+}
+.ui-icon-protocollo-protocollare {
+	background-image: url("../icon/checkmark.png") !important;
+}
+.ui-icon-protocollo-inviate {
+	background-image: url("../icon/paperplane.png") !important;
+}
+.ui-icon-protocollo-nuova {
+	background-image: url("../icon/pen.png") !important;
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+	.ui-icon-protocollo-trash {
+		background-image: url("../icon/trash-hd.png") !important;
+		background-size: 18px 18px;
+	}
+	.ui-icon-protocollo-logout {
+		background-image: url("../icon/exit-hd.png") !important;
+		background-size: 18px 18px;
+	}
+	.ui-icon-protocollo-protocollare {
+		background-image: url("../icon/checkmark-hd.png") !important;
+		background-size: 18px 18px;
+	}
+	.ui-icon-protocollo-inviate {
+		background-image: url("../icon/paperplane-hd.png") !important;
+		background-size: 18px 18px;
+	}
+	.ui-icon-protocollo-nuova {
+		background-image: url("../icon/pen-hd.png") !important;
+		background-size: 18px 18px;
+	}
+}

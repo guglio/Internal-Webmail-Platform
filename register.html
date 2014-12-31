@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html lang="it">
+<head>
+    <meta charset="utf-8">
+
+    <title>Registrazione</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="">
+    <link href="lib/css/main.css" rel="stylesheet" type="text/css">
+    <script src="lib/js/validate_registration.js"></script>
+</head>
+
+<body>
+<div data-role="header" data-position="fixed" data-theme="b"  data-id="header">
+				<h1>Log In</h1>
+	</div>
+    <div class="page_wrapper">
+        
+                <form id="login" name="registrazione" action="register.php" method="post" onsubmit="return validateForm()">
+                    <h1>Registrazione nuovo utente</h1>
+                    <div id="inputs">
+                        <input class="username" type="text" placeholder="Nome" name="nome" required/>
+                        <input class="username" type="text" placeholder="Cognome" name="cognome" required/>
+                        <input class="username" type="text" placeholder="Username" name="username" required/>
+                        <input class="password" type="password" placeholder="Password" name="pwd" required/>
+                        <input class="password" type="password" placeholder="Ripeti Password" name="pwd_verify" required/>
+                    </div>
+
+                    <div id="actions">
+                    	<button id="submit" class="submit">Registrati</button>
+                    </div>
+                </form>
+            </div>
+        
+</body>
+</html>

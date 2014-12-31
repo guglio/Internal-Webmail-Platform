@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html lang="">
+<head>
+    <meta charset="utf-8">
+
+    <title>WebMail</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="robots" content="">
+    <link href="lib/css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+    <script src="lib/js/validate_registration.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="log-in">
+        <div data-role="header" data-position="fixed" data-theme="b" data-id="header">
+            <h1>WebMail C.I.A.M. e S.I.C.A.M.</h1>
+        </div>
+
+        <div data-role="content" class="page_wrapper">
+            <h1>Portale di accesso</h1>
+
+            <form id="login" action="login.php" method="post" data-ajax="false">
+                <div data-role="fieldcontain">
+                    <label for="username">Username</label> <input id="username" type="text" name="username">
+                </div>
+
+                <div data-role="fieldcontain">
+                    <label for="password">Password</label> <input id="password" type="password" name="password">
+                </div>
+                <input type="submit" value="Accedi" data-inline="true" data-icon="check"><a href="#register" data-role="button" data-inline="true" data-icon="edit">Registrati</a><a href="#recover" data-role="button" data-inline="true" data-icon="alert">Password Dimenticata</a>
+            </form>
+        </div>
+    </div>
+
+    <div data-role="page" id="register">
+        <div data-role="header" data-position="fixed" data-theme="b" data-id="header">
+        	<a href="#log-in" data-role="button" data-inline="true" data-icon="back">Log In</a>
+            <h1>WebMail C.I.A.M. e S.I.C.A.M.</h1>
+        </div>
+
+        <div data-role="content" class="page_wrapper">
+            <h1>Registrazione nuovo utente</h1>
+
+            <form name="registrazione" id="registazione" action="register.php" method="post" onsubmit="return validateForm()" data-ajax="false">
+            <div data-role="fieldcontain">
+            	<label for="nome_reg">Nome</label>
+                <input class="username" type="text" placeholder="Nome" id="nome_reg" name="nome_reg">
+            </div>
+            <div data-role="fieldcontain">
+            	<label for="cognome_reg">Cognome</label>
+                <input class="username" type="text" placeholder="Cognome" id="cognome_reg" name="cognome_reg">
+			</div>
+			<div data-role="fieldcontain">
+				<label for="username_reg">Username</label>
+                <input class="username" type="text" placeholder="Username" id="username_reg" name="username_reg">
+            </div>
+            <div data-role="fieldcontain">
+            	<label for="pwd_reg">Password</label>
+                <input class="password" type="password" placeholder="Password" id="pwd_reg" name="pwd_reg">
+            </div>
+            <div data-role="fieldcontain">
+            	<label for="pwd_verify_reg">Ripeti Password</label>
+                <input class="password" type="password" placeholder="Ripeti Password" id="pwd_verify_reg" name="pwd_verify_reg">
+            </div>
+                <button  class="submit" data-inline="true">Registrati</button>
+            </form>
+        </div>
+    </div>
+
+    <div data-role="page" id="recover">
+        <div data-role="header" data-position="fixed" data-theme="b" data-id="header">
+        	<a href="#log-in" data-role="button" data-inline="true" data-icon="back">Log In</a>
+            <h1>WebMail C.I.A.M. e S.I.C.A.M.</h1>
+        </div>
+
+        <div data-role="content" class="page_wrapper">
+            <h1>Reset della password</h1>
+
+            <form id="recovery" action="recover.php" method="post" data-ajax="false">
+            	<div data-role="fieldcontain">
+            		<label for="rec_nome">Nome</label>	
+                    <input class="username" type="text" placeholder="Nome" id="rec_nome" name="rec_nome">
+				</div>
+				<div data-role="fieldcontain">
+					<label for="rec_cognome">Cognome</label>
+                    <input class="username" type="text" placeholder="Cognome" id="rec_cognome" name="rec_cognome">
+                </div>
+				<div data-role="fieldcontain">
+					<label for="rec_username">Username</label>
+                    <input class="username" type="text" placeholder="Username" id="rec_username" name="rec_username">
+                </div>
+                    <button  class="submit" data-inline="true">Reset Password</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

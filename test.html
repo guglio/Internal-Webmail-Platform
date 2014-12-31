@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+  <meta charset="utf-8">
+	<title></title>
+	<meta name="description" content="" />
+  	<meta name="keywords" content="" />
+	<meta name="robots" content="" />
+	<style>
+		form p{
+			width:100%;
+		}
+		p label{
+			width: 30%;
+			display: inline-block;
+		}
+		p input{
+			width: 50%;
+		}
+		.hidden{
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<h2>Password da de/codificare</h2>
+<form autocomplete="off" action="code.php" method="post">
+	<p><label>Codificare</label><input type="text" name="code"></p>
+	<p class="hidden" id="codifica"></p>
+	<p><label>Decodificare</label><input type="text" name="decode"></p>
+	<p class="hidden" id="decodifica"></p>
+	<button type="submit">Submit</button>
+</form>
+</body>
+</html>

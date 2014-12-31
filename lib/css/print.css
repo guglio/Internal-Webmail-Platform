@@ -1,0 +1,15 @@
+.button_print,.ui-btn-text,.button_print_sent{
+	display: none !important;
+	visibility: hidden !important;
+}
+
+.date_right{
+	float: right;
+}
+.popup-subject{
+	font-weight: bold;
+}
+.row-header{
+	border-bottom: solid 1px black;
+	border-top: solid 1px black;
+}
