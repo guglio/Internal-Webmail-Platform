@@ -52,6 +52,7 @@ $contatti_aziende = array("Company name"=>array("Name"=>"...","Address"=>"...","
 If the user has:
 - single email: `"name surname"=>"email@something.com"`
 - multiple emails: `"name surname "=>array("email_1@something.com", "email_1@something.com")`
+
 `$folder_url` -> folder path for the attachments ("/uploaded_files/")
 `$email_out_pwd` -> array with the emails and their corresponding password encoded ("email@something.com"=>"key")
 `$contatti_aziende` -> array with the company contact informations  ("Company name"=>array("Name"=>"...","Address"=>"...","Phone"=>"...","Web"=>"url"))
