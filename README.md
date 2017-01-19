@@ -37,17 +37,28 @@ $scape_char = "@;@";
 $email_out_pwd = array("email@something.com"=>"key","email_1@something.com"=>"key_1");
 $contatti_aziende = array("Company name"=>array("Name"=>"...","Address"=>"...","Phone"=>"...","Web"=>"url"));
 ```
-`$url_db` -> url of the database,
+`$url_db` -> url of the database
+
 `$db_name` -> name of the database
+
 `$db_user` -> user to log into the database
+
 `$db_pwd` -> password to log in
+
 `$user_table` -> table with the user's list ("users")
+
 `$email_out_table` -> table with the emails sent ("email_out")
+
 `$url_protocollo` -> absolute path of the platform
+
 `$user_col` -> list of the `$user_table` column ("(ID, Nome, Cognome, Username, Password, Email)")
+
 `$email_out_col` -> list of the `$email_out_table` column ("(ID_mail_out,Da, A, CC, CCN, Oggetto, Messaggio, Allegati, NomeCognome)")
+
 `$key` -> master key to decode the password
+
 `$nomi_utenti` -> array with the name and surnames of the users (array("name"=>"surname"))
+
 `$email_da` -> array of the email(s) that users are authorize to use.
 If the user has:
 - single email: `"name surname"=>"email@something.com"`
